@@ -1,6 +1,6 @@
 import React from 'react'
 import { LinkContainer } from "react-router-bootstrap"
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown, Image, NavbarBrand } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../actions/userActions'
 const Header = () => {
@@ -17,7 +17,10 @@ const Header = () => {
             <Navbar bg="primary" variant= "dark" expand="lg" collapseOnSelect>
                 <Container>
                     <LinkContainer to="/">
-                        <Navbar.Brand><i class="fab fa-pagelines"></i> F&T Nature</Navbar.Brand>
+                    <NavbarBrand>
+                    <Image src='https://raw.githubusercontent.com/VibhorSingh19/FandT-v2.0/master/src/components/logo.png' alt="logo" fluid rounded width="30rem"></Image>
+                    &nbsp;F&T Nature
+                    </NavbarBrand>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
