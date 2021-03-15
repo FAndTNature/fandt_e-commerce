@@ -36,7 +36,7 @@ export const All = (props) => {
   const imgArray = ["img/portfolio/01-small.jpg", "img/portfolio/02-small.jpg", "img/portfolio/03-small.jpg","img/portfolio/04-small.jpg", "img/portfolio/05-small.jpg", "img/portfolio/06-small.jpg", "img/portfolio/07-small.jpg", "img/portfolio/08-small.jpg", "img/portfolio/09-small.jpg"]
 
     return (
-        <div  style={{margin: "0.0rem"}}>
+        <div>
       <header id='header'>
         <div className='intro'>
           <div className='overlay'>
